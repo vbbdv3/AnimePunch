@@ -8,6 +8,10 @@ local mod = main:Button("Tora", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/AnimePunch'))() 
 end)
 
+local mod = main:Button("EGG", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/egg'))()
+end)
+
 local mod = main:Button("Raid", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Raid'))()
 end)
