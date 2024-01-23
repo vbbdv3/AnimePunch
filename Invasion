@@ -86,3 +86,22 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 end
 end)
+
+local mod = main:Button("KEY FARM", function()
+_G.inv_KEY_enabled = not _G.inv_KEY_enabled
+
+while _G.inv_KEY_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3956.313720703125, 12.314525604248047, 1735.8668212890625)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3991.606689453125, 12.34054946899414, 1752.9178466796875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3961.19580078125, 12.314525604248047, 1776.7308349609375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3926.466796875, 12.314525604248047, 1796.9425048828125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3894.009033203125, 12.314525604248047, 1790.1068115234375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3912.245361328125, 12.314525604248047, 1848.0338134765625)
+wait(0.6)
+end
+end)
