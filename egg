@@ -1,0 +1,91 @@
+while not game:IsLoaded() do
+    wait()
+end
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("EGG")
+
+
+local mod = main:Button("Clown_egg", function()
+_G.Clown_egg_enabled = not _G.Clown_egg_enabled
+
+while _G.Clown_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Clown Island",
+        ["Type"] = "Multi"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
+
+local mod = main:Button("Hunter_egg", function()
+_G.Hunter_egg_enabled = not _G.Hunter_egg_enabled
+
+while _G.Hunter_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Hunter Island",
+        ["Type"] = "Multi"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
+
+local mod = main:Button("Criminal_egg", function()
+_G.Criminal_egg_enabled = not _G.Criminal_egg_enabled
+
+while _G.Criminal_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Criminal Island",
+        ["Type"] = "Multi"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
+
+local mod = main:Button("Titan_egg", function()
+_G.Titan_egg_enabled = not _G.Titan_egg_enabled
+
+while _G.Titan_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Titan Island",
+        ["Type"] = "Multi"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
+
+local mod = main:Button("Nemak_egg", function()
+_G.Nemak_egg_enabled = not _G.Nemak_egg_enabled
+
+while _G.Nemak_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Nemak Island",
+        ["Type"] = "Multi"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
