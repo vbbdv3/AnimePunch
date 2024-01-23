@@ -5,7 +5,7 @@ local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true
 local main = libary:CreateWindow("INVASION")
 
 local mod = main:Button("AUTO KILL", function()
-_G.raid_enabled = not _G.raid_enabled
+_G.inv_enabled = not _G.inv_enabled
 
 local lplr = game.Players.LocalPlayer
 local enemies_folder = workspace.Client.Enemies.InvasionShip
@@ -29,7 +29,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.raid_enabled do
+while task.wait() and _G.inv_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
