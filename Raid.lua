@@ -71,9 +71,9 @@ end)
 
 
 local mod = main:Button("AUTO LEAVE 5 MINUTE", function()
-_G.raid_join_enabled = not _G.raid_join_enabled
+_G.raid_leave_enabled = not _G.raid_leave_enabled
 
-while _G.raid_join_enabled do
+while _G.raid_leave_enabled do
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(299)
 local args = {
