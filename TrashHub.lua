@@ -6,7 +6,7 @@ local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true
 local main = libary:CreateWindow("Anime Punch V0.1")
 
 local mod = main:Button("AntiAfk", function()
-https://scriptblox.com/raw/Universal-Script-Anti-Afk-Remastered-Script-or-Diffrent-Cool-UI-2097
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Anti-Afk-Remastered-Script-or-Diffrent-Cool-UI-2097г"))()
 end)
 
 local mod = main:Button("Tora", function()
