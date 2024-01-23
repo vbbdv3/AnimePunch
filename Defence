@@ -5,7 +5,7 @@ local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true
 local main = libary:CreateWindow("DEFENСE")
 
 local mod = main:Button("AUTO KILL", function()
-_G.raid_enabled = not _G.raid_enabled
+_G.Defense_enabled = not _G.Defense_enabled
 
 local lplr = game.Players.LocalPlayer
 local enemies_folder = workspace.Client.Enemies.Defense
@@ -29,7 +29,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.raid_enabled do
+while task.wait() and _G.Defense_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
@@ -50,9 +50,9 @@ end
 end)
 
 local mod = main:Button("AUTO JOIN", function()
-_G.inv_join_enabled = not _G.inv_join_enabled
+_G.Defense_join_enabled = not _G.Defense_join_enabled
 
-while _G.inv_join_enabled do
+while _G.Defense_join_enabled do
 
 local args = {
     [1] = "Enemies",
@@ -65,6 +65,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
-wait(1)
+wait(5)
 end
 end)
