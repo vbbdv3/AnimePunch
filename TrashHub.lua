@@ -9,7 +9,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/mai
 end)
 
 local mod = main:Button("EGG", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/egg'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Egg'))()
 end)
 
 local mod = main:Button("Raid", function()
