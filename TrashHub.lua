@@ -9,9 +9,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/mai
 end)
 
 local mod = main:Button("Raid", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Raid.Lua", true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Raid'))()
 end)
 
 local mod = main:Button("Invasion", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Invasion.Lua", true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Invasion'))()
 end)
