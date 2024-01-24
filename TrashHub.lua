@@ -37,6 +37,14 @@ local mod = main:Button("ProtectCrystal", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/ProtectCrystal'))()
 end)
 
+local mod = main:Button("RaidEvolved", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/RaidEvolved'))()
+end)
+
+local mod = main:Button("InvasionEvolved", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/InvasionEvolved'))()
+end)
+
 local mod = main:Button("RaidBoss", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/RaidBoss'))()
 end)
