@@ -86,3 +86,37 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 end
 end)
+
+local mod = main:Button("AUTO LEAVE 2 MINUTE", function()
+_G.ShipEvolved_leave_enabled = not _G.ShipEvolved_leave_enabled
+
+while _G.ShipEvolved_leave_enabled do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(119)
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Nemak City"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("AUTO LEAVE 1 MINUTE", function()
+_G.ShipEvolved_leave_enabled = not _G.ShipEvolved_leave_enabled
+
+while _G.ShipEvolved_leave_enabled do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(59)
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Nemak City"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(1)
+end
+end)
