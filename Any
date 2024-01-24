@@ -1,0 +1,34 @@
+while not game:IsLoaded() do
+    wait()
+end
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("ANY")
+
+
+local mod = main:Button("PotionsMachine", function()
+_G.PotionsMachine_enabled = not _G.PotionsMachine_enabled
+
+while _G.PotionsMachine_enabled do
+local args = {
+    [1] = "PotionsMachine",
+    [2] = "Buy"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+local mod = main:Button("Auto RankUp", function()
+_G.RankUp_enabled = not _G.RankUp_enabled
+
+while _G.RankUp_enabled do
+local args = {
+    [1] = "RankUp",
+    [2] = "Evolve"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(10)
+end
+end)
