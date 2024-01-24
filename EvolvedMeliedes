@@ -1,0 +1,112 @@
+while not game:IsLoaded() do
+    wait()
+end
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("EvolvedMeliedes")
+
+local mod = main:Button("AUTO KILL", function()
+_G.SummonBoss_enabled = not _G.SummonBoss_enabled
+
+local lplr = game.Players.LocalPlayer
+local enemies_folder = workspace.Client.Enemies.SummonBoss
+local target;
+
+function getClosestEnemy()
+    local result;
+    local result_distance = math.huge
+    local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
+    if rootPart then
+        for _, enemy in pairs(enemies_folder:GetChildren()) do
+            local enemy_part = enemy:FindFirstChild('HumanoidRootPart')
+            local enemy_distance = enemy_part and (enemy_part.Position - rootPart.Position).Magnitude
+            local enemy_health = enemy:FindFirstChild('Humanoid') and enemy.Humanoid.Health
+            if enemy_distance and enemy_distance < result_distance and enemy_health and enemy_health > 0 then
+                result = enemy
+                result_distance = enemy_distance
+            end
+        end
+    end
+    return result, result_distance
+end
+
+while task.wait() and _G.SummonBoss_enabled do
+    local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
+    if rootPart then
+        if
+            not target or
+            not target.Parent or
+            not target:FindFirstChild('HumanoidRootPart') or
+            not target:FindFirstChild('Humanoid') or
+            target.Humanoid.Health <= 0
+        then
+            target = getClosestEnemy()
+        end
+        local target_part = target and target:FindFirstChild('HumanoidRootPart')
+        if target_part then
+            rootPart.CFrame = target_part.CFrame
+        end
+    end
+end
+end)
+
+local mod = main:Button("AUTO SUMMON", function()
+_G.SummonBoss_join_enabled = not _G.SummonBoss_join_enabled
+
+while _G.SummonBoss_join_enabled do
+local args = {
+    [1] = "Enemies",
+    [2] = "Bridge",
+    [3] = {
+        ["Module"] = "SummonBoss",
+        ["FunctionName"] = "Spawn"
+    }
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(10)
+end
+end)
+
+
+local mod = main:Button("AUTO CRAFT", function()
+_G.SummonBoss_leave_enabled = not _G.SummonBoss_leave_enabled
+
+while _G.SummonBoss_leave_enabled do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait(10)
+local args = {
+    [1] = "Spawner",
+    [2] = "Buy"
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("KEY FARM", function()
+_G.inv_KEY_enabled = not _G.inv_KEY_enabled
+
+while _G.inv_KEY_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4160.44921875, 26.635005950927734, -4916.64892578125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4176.05908203125, 26.635007858276367, -4888.4287109375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4137.73876953125, 17.854122161865234, -4853.26611328125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4163.6103515625, 17.8541202545166, -4829.97607421875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4151.61572265625, 17.854122161865234, -4795.4208984375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4111.888671875, 18.135160446166992, -4790.13525390625)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4000.35302734375, 26.635007858276367, -4806.498046875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4081.770263671875, 18.06386947631836, -4656.81298828125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4120.3935546875, 17.854122161865234, -4620.84814453125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4103.04541015625, 17.8541202545166, -4566.97314453125)
+wait(0.6)
+end
+end)
