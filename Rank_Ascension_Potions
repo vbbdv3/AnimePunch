@@ -60,3 +60,19 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(0.1)
 end
 end)
+
+local mod = main:Button("Auto Sword", function()
+_G.CardsEvolved_enabled = not _G.CardsEvolved_enabled
+
+while _G.CardsEvolved_enabled do
+local args = {
+    [1] = "CardsEvolved",
+    [2] = "Buy"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+
+wait(0.1)
+end
+end)
+
