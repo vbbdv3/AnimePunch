@@ -13,8 +13,8 @@ local mod = main:Button("Tora", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/AnimePunch'))() 
 end)
 
-local mod = main:Button("Any", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Any'))()
+local mod = main:Button("Rank_Ascension", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Rank_Ascension'))()
 end)
 
 local mod = main:Button("EGG", function()
