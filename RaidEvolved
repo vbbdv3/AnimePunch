@@ -2,13 +2,13 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("RAIDS")
+local main = libary:CreateWindow("RaidEvolved")
 
 local mod = main:Button("AUTO KILL", function()
-_G.raid_enabled = not _G.raid_enabled
+_G.RaidEvolved_enabled = not _G.RaidEvolved_enabled
 
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace.Client.Enemies.Raid
+local enemies_folder = workspace.Client.Enemies.RaidEvolved
 local target;
 
 function getClosestEnemy()
@@ -29,7 +29,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.raid_enabled do
+while task.wait() and _G.RaidEvolved_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
@@ -50,15 +50,15 @@ end
 end)
 
 local mod = main:Button("AUTO JOIN", function()
-_G.raid_join_enabled = not _G.raid_join_enabled
+_G.RaidEvolved_join_enabled = not _G.RaidEvolved_join_enabled
 
-while _G.raid_join_enabled do
+while _G.RaidEvolved_join_enabled do
 
 local args = {
     [1] = "Enemies",
     [2] = "Bridge",
     [3] = {
-        ["Module"] = "Raid",
+        ["Module"] = "RaidEvolved",
         ["FunctionName"] = "Start",
         ["Args"] = "Friend"
     }
@@ -71,15 +71,15 @@ end)
 
 
 local mod = main:Button("AUTO LEAVE 5 MINUTE", function()
-_G.raid_leave_enabled = not _G.raid_leave_enabled
+_G.RaidEvolved_leave_enabled = not _G.RaidEvolved_leave_enabled
 
-while _G.raid_leave_enabled do
+while _G.RaidEvolved_leave_enabled do
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(299)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
-    [3] = "Desert Piece"
+    [3] = "Nemak City"
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
