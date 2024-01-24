@@ -64,7 +64,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
-wait(10)
+wait(3)
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(1)
 end
