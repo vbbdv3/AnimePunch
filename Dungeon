@@ -2,7 +2,7 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("RAIDS")
+local main = libary:CreateWindow("Dungeon")
 
 local mod = main:Button("AUTO KILL", function()
 _G.Dungeon_enabled = not _G.Dungeon_enabled
@@ -50,39 +50,21 @@ end
 end)
 
 local mod = main:Button("AUTO JOIN", function()
-_G.raid_join_enabled = not _G.raid_join_enabled
+_G.Dungeon_join_enabled = not _G.Dungeon_join_enabled
 
-while _G.raid_join_enabled do
-
+while _G.Dungeon_join_enabled do
 local args = {
     [1] = "Enemies",
     [2] = "Bridge",
     [3] = {
-        ["Module"] = "Raid",
-        ["FunctionName"] = "Start",
-        ["Args"] = "Friend"
+        ["Module"] = "Dungeon",
+        ["FunctionName"] = "Join",
+        ["Args"] = ""
     }
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
-wait(1)
-end
-end)
 
-
-local mod = main:Button("AUTO LEAVE 5 MINUTE", function()
-_G.raid_leave_enabled = not _G.raid_leave_enabled
-
-while _G.raid_leave_enabled do
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-wait(299)
-local args = {
-    [1] = "Teleport",
-    [2] = "Spawn",
-    [3] = "Desert Piece"
-}
-
-game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
-wait(1)
+wait(10)
 end
 end)
