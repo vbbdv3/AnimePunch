@@ -32,3 +32,17 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(10)
 end
 end)
+
+local mod = main:Button("Auto Ascension", function()
+_G.Ascension_enabled = not _G.Ascension_enabled
+
+while _G.Ascension_enabled do
+local args = {
+    [1] = "Ascension",
+    [2] = "Evolve"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(10)
+end
+end)
