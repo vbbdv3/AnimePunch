@@ -81,10 +81,11 @@ local args = {
     [1] = "Stars",
     [2] = "Roll",
     [3] = {
-        ["Map"] = "Nemak Island",
+        ["Map"] = "Nemak City",
         ["Type"] = "Multi"
     }
 }
+
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(0.2)
 end
