@@ -84,7 +84,7 @@ wait(1)
 end
 end)
 
-local mod = main:Button("KEY FARM", function()
+local mod = main:Button("Ice Cube FARM", function()
 _G.inv_KEY_enabled = not _G.inv_KEY_enabled
 
 while _G.inv_KEY_enabled do
