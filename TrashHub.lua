@@ -45,6 +45,10 @@ local mod = main:Button("ShipEvolved", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/ShipEvolved'))()
 end)
 
+local mod = main:Button("EvolvedMeliedes", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/EvolvedMeliedes'))()
+end)
+
 local mod = main:Button("RaidBoss", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/RaidBoss'))()
 end)
