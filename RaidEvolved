@@ -87,7 +87,7 @@ wait(1)
 end
 end)
 
-local mod = main:Button("AUTO LEAVE 5 MINUTE", function()
+local mod = main:Button("AUTO LEAVE 2 MINUTE", function()
 _G.RaidEvolved_leave_enabled = not _G.RaidEvolved_leave_enabled
 
 while _G.RaidEvolved_leave_enabled do
