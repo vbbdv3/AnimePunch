@@ -46,3 +46,17 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(10)
 end
 end)
+
+local mod = main:Button("Auto Fruit", function()
+_G.Fruit_enabled = not _G.Fruit_enabled
+
+while _G.Fruit_enabled do
+local args = {
+    [1] = "FruitsEvolved",
+    [2] = "Buy"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.1)
+end
+end)
