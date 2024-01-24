@@ -5,10 +5,10 @@ local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true
 local main = libary:CreateWindow("RAIDS")
 
 local mod = main:Button("AUTO KILL", function()
-_G.raid_enabled = not _G.raid_enabled
+_G.Dungeon_enabled = not _G.Dungeon_enabled
 
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace.Client.Enemies.RaidBoss
+local enemies_folder = workspace.Client.Enemies.Dungeon
 local target;
 
 function getClosestEnemy()
@@ -29,7 +29,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.raid_enabled do
+while task.wait() and _G.Dungeon_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
