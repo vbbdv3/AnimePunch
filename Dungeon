@@ -65,6 +65,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 
-wait(10)
+wait(3)
 end
 end)
