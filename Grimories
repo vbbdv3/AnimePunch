@@ -1,0 +1,32 @@
+while not game:IsLoaded() do
+    wait()
+end
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("Grimories")
+
+local mod = main:Button("OLD PAPER FARM", function()
+_G.OLD_enabled = not _G.OLD_enabled
+
+while _G.OLD_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3893.393798828125, 20.230533599853516, -418.9427490234375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3893.489013671875, 20.230533599853516, -458.00067138671875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3865.41357421875, 13.087101936340332, -478.9989929199219)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3859.955078125, 13.087101936340332, -544.8280029296875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3826.356689453125, 13.087101936340332, -529.604736328125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3825.016357421875, 13.087101936340332, -490.14849853515625)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3793.06201171875, 13.087101936340332, -437.0469055175781)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3762.74609375, 13.087101936340332, -417.2581481933594)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3735.70751953125, 13.087101936340332, -394.9120178222656)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3764.271240234375, 13.087101936340332, -362.9335632324219)
+wait(0.6)
+end
+end)
