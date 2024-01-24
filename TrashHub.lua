@@ -32,3 +32,7 @@ end)
 local mod = main:Button("Defenсe", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Defence'))()
 end)
+
+local mod = main:Button("Defenсe", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/RaidBoss'))()
+end)
