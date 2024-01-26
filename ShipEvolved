@@ -4,7 +4,7 @@ end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("ShipEvolved")
 
-local mod = main:Button("AUTO KILL", function()
+local mod = main:Button("FAST AUTO KILL", function()
 _G.ShipEvolved_enabled = not _G.ShipEvolved_enabled
 
 local lplr = game.Players.LocalPlayer
@@ -46,6 +46,25 @@ while task.wait() and _G.ShipEvolved_enabled do
             rootPart.CFrame = target_part.CFrame
         end
     end
+end
+end)
+
+local mod = main:Button("100% FARM ALL NIGHT", function()
+_G.inv_KEY_enabled = not _G.inv_KEY_enabled
+
+while _G.inv_KEY_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6411.96044921875, 2708.92919921875, 1827.2794189453125)
+wait(0.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6464.2734375, 2708.931884765625, 1845.099853515625)
+wait(0.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6467.82763671875, 2708.9306640625, 1882.8609619140625)
+wait(0.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6435.298828125, 2708.92822265625, 1912.0042724609375)
+wait(0.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6392.99462890625, 2708.926513671875, 1885.6058349609375)
+wait(0.4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6435.53857421875, 2710.927490234375, 1865.9990234375)
+wait(0.4)
 end
 end)
 
