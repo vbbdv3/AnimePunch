@@ -2,7 +2,7 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("DEFENСE")
+local main = libary:CreateWindow("DEFENSE")
 
 local mod = main:Button("AUTO KILL", function()
 _G.DefenseEvolved_enabled = not _G.DefenseEvolved_enabled
