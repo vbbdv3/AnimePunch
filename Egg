@@ -90,3 +90,21 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(0.2)
 end
 end)
+
+local mod = main:Button("Online_egg", function()
+_G.Online_egg_enabled = not _G.Online_egg_enabled
+
+while _G.Online_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Online Island",
+        ["Type"] = "Multi"
+    }
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
