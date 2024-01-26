@@ -29,12 +29,12 @@ local mod = main:Button("Invasion", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Invasion'))()
 end)
 
-local mod = main:Button("Defenсe", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Defence'))()
+local mod = main:Button("Defense", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/Defense'))()
 end)
 
-local mod = main:Button("DefenceEvolved", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/DefenceEvolved'))()
+local mod = main:Button("DefenseEvolved", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/DefenseEvolved'))()
 end)
 
 local mod = main:Button("ProtectCrystal", function()
