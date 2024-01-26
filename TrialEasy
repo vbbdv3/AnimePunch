@@ -8,7 +8,7 @@ local mod = main:Button("AUTO KILL", function()
 _G.Trial_enabled = not _G.Trial_enabled
 
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace.Client.Enemies.Easy_Trial
+local enemies_folder = workspace.Client.Enemies.TrialEasy_Trial
 local target;
 
 function getClosestEnemy()
