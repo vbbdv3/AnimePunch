@@ -3,7 +3,7 @@ while not game:IsLoaded() do
 end
 
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("Anime Punch V1.8")
+local main = libary:CreateWindow("Anime Punch V1.9")
 
 local mod = main:Button("AntiAfk", function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Anti-Afk-Remastered-Script-or-Diffrent-Cool-UI-2097г"))()
@@ -36,6 +36,8 @@ end)
 local mod = main:Button("DefenseEvolved", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/DefenseEvolved'))()
 end)
+
+local main = libary:CreateWindow("Anime Punch V1.9")
 
 local mod = main:Button("ProtectCrystal", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vbbdv3/AnimePunch/main/ProtectCrystal'))()
