@@ -108,3 +108,21 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(0.2)
 end
 end)
+
+local mod = main:Button("Hollow_egg", function()
+_G.Hollow_egg_enabled = not _G.Hollow_egg_enabled
+
+while _G.Hollow_egg_enabled do
+local args = {
+    [1] = "Stars",
+    [2] = "Roll",
+    [3] = {
+        ["Map"] = "Hollow Island",
+        ["Type"] = "Multi"
+    }
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(0.2)
+end
+end)
