@@ -13,7 +13,7 @@ local args = {
     [1] = "spin",
     [2] = "champions",
     [3] = "one",
-    [4] = "komona"
+    [4] = "tokyo"
 }
 
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
