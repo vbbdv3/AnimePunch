@@ -6,18 +6,17 @@ local main = libary:CreateWindow("EGG")
 
 
 local mod = main:Button("namequi", function()
-_G.namequi_enabled = not _G.namequi_enabled
+_G.village_enabled = not _G.village_enabled
 
-while _G.namequi_enabled do
+while _G.village_enabled do
 local args = {
     [1] = "spin",
     [2] = "champions",
     [3] = "one",
-    [4] = "tokyo"
+    [4] = "shell village"
 }
 
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
-
 
 wait(0.1)
 end
