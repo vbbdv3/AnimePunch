@@ -3,11 +3,8 @@ while not game:IsLoaded() do
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("EGG")
-
-
 local mod = main:Button("namequi", function()
 _G.village_enabled = not _G.village_enabled
-
 while _G.village_enabled do
 local args = {
     [1] = "spin",
@@ -15,23 +12,45 @@ local args = {
     [3] = "one",
     [4] = "shell village"
 }
-
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
-
 wait(0.1)
 end
 end)
-
 local mod = main:Button("attack", function()
 _G.attack_enabled = not _G.attack_enabled
-
 while _G.attack_enabled do
 local args = {
     [1] = "attack"
 }
-
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+end
+end)
+
+local mod = main:Button("skill", function()
+_G.skill_enabled = not _G.skill_enabled
+while _G.skill_enabled do
+local args = {
+    [1] = "fire_ability",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Shared.events.RemoteFunction:InvokeServer(unpack(args))
+wait(5)
+local args = {
+    [1] = "fire_ability",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage").Shared.events.RemoteFunction:InvokeServer(unpack(args))
+wait(5)
+local args = {
+    [1] = "fire_ability",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage").Shared.events.RemoteFunction:InvokeServer(unpack(args))
+wait(25)
 end
 end)
 
